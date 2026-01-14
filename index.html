@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Monument</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+
+    <body>
+
+        <h1>The Monument</h1>
+
+        <div class="hud">
+            Moves: <span id="moveCount">0</span>
+        </div>
+
+        <div class="game-layout">
+            <div id="puzzle"></div>
+
+            <div class="reference">
+                <p>Reference Image</p>
+                <img src="van.gor.og.jpeg">
+            </div>
+        </div>
+
+        <div id="winMessage">
+            <div class="winBox">
+                <p>🎉 Puzzle Completed! 🎉</p>
+                <button onclick="playAgain()">Play Again</button>
+            </div>
+        </div>
+        
+        <button onclick="shuffle()">Shuffle</button>
+
+        <script src="script.js"></script>
+        
+        <audio id="winSound" src="win.mp3"></audio>
+    </body>
+</html>
